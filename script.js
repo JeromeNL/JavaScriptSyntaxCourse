@@ -219,8 +219,52 @@ do{
     j++;
 } while(j < 5)
 
+// Random number 1-100
+console.log(Math.floor(Math.random() * 100))
+
+// Binary convert
+function convertToInt(str){
+    return parseInt(str, 2);
+}
+
+console.log(convertToInt("101"));
 
 
+// Double Ternary operator
+function checkSign(num){
+    return num > 0 ? "pos" : num < 0 ? "neg" : "zero"
+}
+
+console.log(checkSign(-10))
 
 
+var magic = function() {
+    return new Date();
+}
+
+// can also be
+var magic2 = () => {
+    return new Date();
+}
+// And also
+const magic3 = () => new Date();
+
+var myConcat = (arr1, arr2) => arr1.concat(arr2);
+
+class SpaceShuttle{
+    constructor(targetPlanet) {
+        this.targetPlanet = targetPlanet;
+    }
+
+    get planet(){
+        return this.targetPlanet;
+    }
+
+    set planet(updatePlanet){
+        this.targetPlanet = updatePlanet;
+    }
+}
+
+var zeus = new SpaceShuttle("Jupiter");
+console.log(zeus.targetPlanet)
 
