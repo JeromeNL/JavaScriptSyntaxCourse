@@ -140,10 +140,10 @@ function nextInLine(arr, item){
  return arr.shift();
 }
 
-var testArr = [1,2,3,4,5];
-console.log(JSON.stringify(testArr));
-console.log(nextinLine(testarr, 6));
-console.log(JSON.stringify(testArr));
+// var testArr = [1,2,3,4,5];
+// console.log(JSON.stringify(testArr));
+// console.log(nextinLine(testarr, 6));
+// console.log(JSON.stringify(testArr));
 
 function welcomeToBooleans(value){
     if(value === 12){ // same value AND same data type
@@ -173,15 +173,34 @@ function switchStatement(){
 }
 
 // Objects
+var ourCat = {
+    "name": "Olly",
+    "legs": 4,
+    "age": 3,
+    "Place of Birth": "The Netherlands",
+}
+
+var catAge = ourCat.age;
+var catLegs = ourCat.legs;
+var birth = ourCat["Place of Birth"];
+
+ourCat.age = 6;
+delete ourCat.name;
+console.log(ourCat.age)
 
 
+var myPlants = [
+    {
+        type: "flowers",
+        list: [
+            "rose",
+            "tulip"
+        ]
+    }
 
-
-
-
-
-
-
+]
+var secondFlower = myPlants[0].list[0];
+console.log(secondFlower)
 
 
 
