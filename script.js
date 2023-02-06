@@ -101,20 +101,78 @@ TwoDArray.unshift()
 
 var myList = [['cereal', 3, ['milk', 5], ['juice', 25]]];
 
+// Functions
+
+function ourFunction(){
+    var notGlobal = 5; // not global
+    aGlobalVar = 10; // global because no 'var'
+    console.log("Hey World!");
+}
+
+var globalName = "JeromeNL" // This is a global variable
+
+function myFunction(name){
+    if(typeof globalName != "undefined")
+
+    console.log("Hi World! and " + name + " and " + globalName);
+    //console.log(aGlobalVar)
+}
+
+myFunction("jerome")
 
 
+// Local overwrites Global vars.
+var myLocalVar = 10;
+function myLocalScope(){
+    var myLocalVar = 5;
+    console.log(myLocalVar);
+}
 
+myLocalScope();
 
+var sumGlobal = 0;
+function addThree(){ // default return type is 'undefined'
+    sumGlobal += 3;
+}
 
+function nextInLine(arr, item){
+ arr.push(item);
+ return arr.shift();
+}
 
+var testArr = [1,2,3,4,5];
+console.log(JSON.stringify(testArr));
+console.log(nextinLine(testarr, 6));
+console.log(JSON.stringify(testArr));
 
+function welcomeToBooleans(value){
+    if(value === 12){ // same value AND same data type
+        return "Equal";
+    }
+   return "not equal";
+}
 
+function ifElseStatement(){
+    // same as C#/Java
+}
 
+function switchStatement(){
+    var answer = 5;
 
+    switch(answer){
+        case 1:
+            result = "incorrect"
+            break;
+        case 5:
+            result = "correct"
+            break;
+        default:
+            result = "unknown";
+            break;
+    }
+}
 
-
-
-
+// Objects
 
 
 
