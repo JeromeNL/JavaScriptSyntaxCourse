@@ -202,9 +202,22 @@ var myPlants = [
 var secondFlower = myPlants[0].list[0];
 console.log(secondFlower)
 
+// while - same C#
+var i = 0;
+while(i < 5){
+    i++;
+}
 
+// For loop - same C#
+for (var i = 0; i < 5; i++){
+    console.log(i);
+}
 
+var j = 0;
 
+do{
+    j++;
+} while(j < 5)
 
 
 
